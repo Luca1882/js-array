@@ -24,13 +24,31 @@ for(let i = 0; i < teachers.length; i++) {
       }
       
 }
-console.log(teachers);
+console.log(`Nuovo array:  ${teachers}`);
+
 
 // 3. Rimuovi l'ultimo insegnante dall'array e salvalo nella variabile lastTeacher qui sotto
-const lastTeacher = null;
+
+const lastTeacher = teachers.pop();
+
+for(let i = 0; i < teachers.length; i++) {
+    if(teachers[i] === 'Luca'){
+      teachers.pop();
+    }
+}
+console.log(`L'ultimo insegnante è: ${lastTeacher}`);
+
 
 // 4. Rimuovi il primo insegnante dall'array e salvalo nella variabile firstTeacher qui sotto
-const firstTeacher = null;
+
+const firstTeacher = teachers.shift();
+
+for(let i = 0; i < teachers.length; i++){
+    if (teachers[i] === 'Nathan'){
+      teachers.shift();
+    }
+}
+console.log(`Il primo insegnante è: ${firstTeacher}`);
 
 // 5. Aggiungi un insegnante di nome 'Vanessa' alla fine dell'array teachers
 
